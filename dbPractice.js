@@ -2,7 +2,6 @@ const sqlite3 = require('sqlite3').verbose();
 const initializeDatabase = require('./dbSetup');
 
 const dbPath = './SQLite_Database';
-//
 
 initializeDatabase(dbPath);
 const db = new sqlite3.Database(dbPath);
@@ -11,6 +10,7 @@ function runQuery(sql){
     db.run(sql);
 }
 
+//Function that fetches a user by id 
 function fetchUserById(id) {
     return new Promise((resolve, reject) => {
         db.get('SELECT * FROM users WHERE id = ?', [id], (err, row) => {
@@ -23,6 +23,9 @@ function fetchUserById(id) {
     });
 }
 
+
+//Task 1: Correctly handle errors and log the correct user 
+
 // Incorrectly handling errors (missing catch for promise rejection)
 fetchUserById(-1)
     .then(user => console.log("User:", user))
@@ -32,6 +35,8 @@ fetchUserById(-1)
     }
 );
 
+
+//Task 2: 
 async function insertUsers() {
     try {
         await Promise.all([
