@@ -1,7 +1,9 @@
+"use strict";
+
 //Task 1: log the values in the array 
 const arr = [10, 20, 30];
 
-for(const index in arr){
+for(const index of arr){
     console.log("arr values: " + index);  
 }
 
@@ -9,14 +11,9 @@ for(const index in arr){
 //Task 2: log the object properties 
 const obj = {name: "Alice", age: 30, city: "New York"};
 
+
 console.log("\nObject values: ");
-for(const value of obj){
-    console.log(value);
+for(const value in obj){
+    console.log(obj[value]);  
 }
 
-//Task 3: 
-function greet(){
-    console.log("Hello");
-}
-
-// let result = 
