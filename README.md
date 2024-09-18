@@ -1,6 +1,6 @@
 # JS_Debugging
  
-Prerequisites
+Prerequisites <br>
 Before getting started, ensure you have the following installed:
 
 Node.js (v14 or higher)
