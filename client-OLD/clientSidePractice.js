@@ -1,6 +1,6 @@
 "use strict";
 
-//Task 1: log the values in the array 
+//Task 1: log the values in the array (not the indexes)
 const arr = [10, 20, 30];
 
 for(const index in arr){

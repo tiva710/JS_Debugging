@@ -1,3 +1,5 @@
+"use strict";
+
 const fs = require('fs').promises;
 
 async function createAndWriteFile() {
@@ -14,7 +16,7 @@ async function createAndWriteFile() {
         await fs.appendFile('server/file.txt', 'Step 3: Throw cards in the air\nStep 4: Pick up all cards\n');
         console.log('More lines appended to file.');
 
-        // Step 4: Append final content c
+        // Step 4: Append final content 
         await fs.appendFile('server/file.txt', 'Final Step: Enjoy your shuffled cards\n');
         console.log('Final content appended to file.');
 
