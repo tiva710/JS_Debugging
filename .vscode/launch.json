@@ -1,12 +1,19 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "type": "node",
-        "request": "launch",
-        "name": "Launch Program",
-        "program": "${workspaceFolder}/api.js"
-      }
-    ]
-  }
-  
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/api.js"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/Tiva/Desktop/CST334-assignments/programming-assignments/PA2/src",
+      "program": "/Users/Tiva/Desktop/CST334-assignments/programming-assignments/PA2/src/build/Debug/outDebug"
+    }
+  ]
+}

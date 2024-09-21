@@ -1,18 +1,20 @@
 {
-  "name": "js-debugging",
-  "version": "1.0",
+  "name": "js-debugging-tutorial",
+  "version": "1.0.0",
   "description": "A Node.js project aimed to provide JS debugging help",
-  "main": "api.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node routes/api.js",
-    "sol": "node routes/api-solution.js",
+    "start": "node server/routes/api.js",
     "build": "echo 'Building the project...'"
   },
   "author": "Tiva Rocco",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1", 
-    "sqlite3": "^5.0.0"
+    "sqlite3": "^5.0.0", 
+    "body-parser": "^1.19.0", 
+    "type": "module"
+
   }
 }
   

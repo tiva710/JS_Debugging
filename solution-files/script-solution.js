@@ -1,3 +1,5 @@
+//JS for add tasks page 
+
 // Initialize an empty to-do list
 let todoList = [];
 
@@ -8,11 +10,17 @@ function addTask(task) {
         return;
     }
 
-    // Intentional Bug 1: Missing push method
     todoList.push(task);
 
     console.log(`Task added: ${task}`);
 }
+
+document.getElementById("addTask").addEventListener('click', function(){
+    let task = document.getElementById("#addTask").value;
+    addTask(task);
+
+    //TODO: display that a task was added here 
+})
 
 // Remove a task from the list
 function removeTask(task) {
@@ -45,7 +53,7 @@ function listTasks() {
 }
 
 // Test the functions
-addTask('Learn JavaScript');
-addTask('Write debugging tutorial');
-removeTask('Learn JavaScript');
+// addTask('Learn JavaScript');
+// addTask('Write debugging tutorial');
+// removeTask('Learn JavaScript');
 listTasks();

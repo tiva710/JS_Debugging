@@ -12,19 +12,13 @@ function initializeDatabase(dbPath) {
 
     db.serialize(() => {
         // Create the users table if it doesn't exist
-        db.run(`CREATE TABLE IF NOT EXISTS users (
+        
+        db.run(`CREATE TABLE IF NOT EXISTS tasks (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT NOT NULL,
-            age INTEGER NOT NULL,
-            email TEXT NOT NULL
+            description TEXT NOT NULL,
+            completion_date TEXT NOT NULL
         )`);
 
-        // Insert some sample data
-        const insertData = db.prepare(`INSERT INTO users (name, age, email) VALUES (?, ?, ?)`);
-        insertData.run('Alice', 30, 'alice@example.com');
-        insertData.run('Bob', 25, 'bob@example.com');
-        insertData.run('Charlie', 35, 'charlie@example.com');
-        insertData.finalize();
     });
 
     db.close((err) => {
@@ -35,5 +29,6 @@ function initializeDatabase(dbPath) {
         }
     });
 }
+
 
 module.exports = initializeDatabase;
