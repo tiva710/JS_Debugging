@@ -5,7 +5,6 @@ const sqlite3 = require('sqlite3').verbose();
 const app = express();
 
 const PORT = 3000;  
-// const dbPath = '../../db/my-database.db';
 const dbPath = path.join(__dirname, '../../db/my-database.db');
 const db = new sqlite3.Database(dbPath);
 
@@ -23,7 +22,6 @@ app.post('/tasks', (req, res) => {
         return res.status(400).send('Description and completion date are required.');
     }
 
-    // Intentional Bug: Wrong table name
     db.run('INSERT INTO tasks (description, completion_date) VALUES (?, ?)', [description, completion_date], function(err) {
         if (err) {
             return res.status(500).send('Error inserting task');
@@ -51,7 +49,7 @@ app.put('/tasks/:id', (req, res) => {
         return res.status(400).send('Description and completion date are required.');
     }
 
-    // Intentional Bug: Missing where clause
+    
     db.run('UPDATE tasks SET description = ?, completion_date = ? WHERE id = ?', [description, completion_date, id], function(err) {
         if (err) {
             return res.status(500).send('Error updating task');
