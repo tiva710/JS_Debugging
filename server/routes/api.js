@@ -1,3 +1,4 @@
+//api.js
 const express = require('express');
 const path = require('path');
 const initializeDatabase = require('../dbSetup');
@@ -31,8 +32,8 @@ app.post('/tasks', (req, res) => {
 });
 
 // Get all tasks (READ)
-app.get('/tasks', (req, res) => {
-    db.all('SELECT * FROM tasks', [], (err, rows) => {
+app.get('/tasks', (req, res) => { 
+    db.all('SELECT * FROM task', [], (err, rows) => {
         if (err) {
             return res.status(500).send('Error retrieving tasks');
         }
@@ -49,21 +50,20 @@ app.put('/tasks/:id', (req, res) => {
         return res.status(400).send('Description and completion date are required.');
     }
 
-    
     db.run('UPDATE tasks SET description = ?, completion_date = ? WHERE id = ?', [description, completion_date, id], function(err) {
         if (err) {
             return res.status(500).send('Error updating task');
         }
-        res.send({ id, description, completion_date });
+        res.send({ id, description, completon_date });
     });
 });
 
 
-//Delete a task DELETE 
+//Delete a task DESTORY  
 app.delete('/tasks/:id', (req, res) => {
     const {id} = req.params; 
 
-    db.run('DELETE FROM tasks WHERE id = ?', id, function(err){
+    db.run('DELETE FROM tasks WHERE id = ?' id, function(err){
         if(err){
             return res.status(500).send('Error deleteing task');
         }
@@ -73,6 +73,7 @@ app.delete('/tasks/:id', (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, () => {
+//HERE - Change PORT to port 
+app.listen(port, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });

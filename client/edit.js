@@ -10,22 +10,22 @@ async function listTasks() {
     }
 
     const tasks = await response.json();
-
-    const taskList = document.querySelector("#taskList");
-    taskList.innerHTML = ``;//Clear existing tasks 
     
     tasks.forEach(task => {
+        //debugger; 
         document.getElementById("taskList").innerHTML += `
         <div class="taskItem" >
             <p>${task.description} <br> 
             Due: ${task.completion_date}</p> 
             <br> 
             <button onclick="deleteTask(${task.id})"> Completed </button> 
-            <button onclick="editTask(${task.id}, '${task.description}', '${task.completion_date}')">Edit</button>
+            <button onclick="editTask(${task.id}, ${task.description}', '${task.completion_date}')">Edit</button>
         </div>
         `;
     });
 }
+
+
 
 const modal = document.getElementById("editModal");
 

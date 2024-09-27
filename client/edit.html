@@ -12,7 +12,7 @@
         <a href="add.html">Add</a>
     </nav>
 
-    <h3>Edit Existing Tasks</h3>
+    <h3>Edit Existing Tasks </h3>
 
     <br>
     <div id = "container">
@@ -37,40 +37,22 @@
     </div>
     
     <script>
-        //Open modal when edit button is clicked 
-        async function openModal(id, description, completion_date){
-            const modal = document.getElementById("editModal");
-            const descriptionInput = document.getElementById("editDescription");
-            const dateInput = document.getElementById("editDate");
-
-            descriptionInput.value = description; 
-            dateInput.value = completion_date;
-
-            modal.style.display = "block";
-
-            document.getElementById("saveBtn").onclick = async function (){
-                const newDescription = descriptionInput.value;
-                const newDate = document.getElementById("completionDate").value;
-                
-                await editTask({description: taskDescription, completion_date: completionDate});
-
-                document.getElementById("addTask").value = '';
-
-            };
-        }
-
+        
         async function editTask(id, description, completion_date) {
             document.getElementById("editTask").value = description;
             document.getElementById("completionDate").value = completion_date;
+            
             const modal = document.getElementById("editModal");
-            // Show the modal
             modal.style.display = "block";
 
-            // Handle the form submission
+            // Handle form submission
             document.getElementById("editTaskForm").onsubmit = async function (e) {
                 e.preventDefault();  // Prevent page refresh
+        
                 const newDescription = document.getElementById("editTask").value;
-                const newCompletionDate = document.getElementById("completionDate").value;
+                const newCompletionDate = document.getElementById("completionDate");
+
+                //debugger;
 
                 const response = await fetch(`/tasks/${id}`, {
                     method: 'PUT',
@@ -84,14 +66,15 @@
                 }
 
                 console.log(`Task ${id} updated`);
-                modal.style.display = "none";  // Close modal after submission
-                location.reload();  // Reload page to show the updated task list
+
+                modal.style.display = "none";  
+                location.reload();  
             };
         }
         
         // Remove a task from the list
         async function deleteTask(id) {
-            const response = await fetch(`/tasks/${id}`, {method: 'DELETE'});
+            const response = fetch(`/tasks/${id}`, {method: 'DELETE'});
 
             if (!response.ok) {
                 console.error('Error deleting task');
