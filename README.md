@@ -14,7 +14,7 @@ To install SQLite: <br>
 - Download the precompiled binaries for your machine <br>
 
 
-<h3> Setting Up Your Environment in Visual Studio Code </h3>h3> 
+<h3> Setting Up Your Environment in Visual Studio Code </h3> 
 - Download the project files <br>
 - Open project in VSCode <br>
 
