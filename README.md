@@ -21,6 +21,7 @@ Confirm installation with: <br>
 - node -v <br>
 - npm -v <br>
 
+Then: <br>
 - Run 'npm install' <br>
 - Run 'npm start'<br>
 
