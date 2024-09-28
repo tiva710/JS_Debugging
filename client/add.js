@@ -37,7 +37,7 @@ document.getElementById("addBtn").addEventListener('click', async function(){
         if(taskDescription == "" && completionDate == "" && completionDate !== null){
             await addTask({description: taskDescription, completion_date: completionDate});
             taskDescription.value = '';
-            completionDate.value = '';
+            document.getElementById("completionDate") = '';
             document.getElementById("taskAdded").innerHTML="Task Added!";
         }else{
             document.getElementById("taskAdded").innerHTML="Both fields are required.";
