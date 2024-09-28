@@ -10,20 +10,20 @@ You should also be familiar with basic JavaScript concepts. <br>
 
 
 <h3> Setting Up Your Environment in Visual Studio Code </h3> 
-- Download the project files or clone the repository <br>
-- Open project in VSCode <br>
+<li>Download the project files or clone the repository</li> <br>
+<li>Open project in VSCode </li><br>
 
 <h4> Install Project Dependencies </h4>
 In the VSCode terminal: <br>
-- Navigate to project directory (if not already there) <br>
+<li>Navigate to project directory (if not already there)</li> <br> <br>
 
 Confirm installation with: <br>
-- node -v <br>
-- npm -v <br>
+<li> node -v </li><br>
+<li>npm -v </li><br>
 
 Then: <br>
-- Run 'npm install' <br>
-- Run 'npm start'<br>
+<li>Run 'npm install' </li><br>
+<li>Run 'npm start'</li><br>
 
 
 <h3>To Do's & Reminders</h3>
