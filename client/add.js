@@ -34,10 +34,12 @@ document.getElementById("addBtn").addEventListener('click', async function(){
     const completionDate = document.getElementById("addTask").value;
 
     try{
-        if(taskDescription == "" && completionDate == "" && completionDate !== null){
+        if(taskDescription == "" && completionDate == ""){
             await addTask({description: taskDescription, completion_date: completionDate});
-            taskDescription.value = '';
-            document.getElementById("completionDate") = '';
+            
+            document.getElementById("addTask") = '';
+            document.getElementById("completionDate").value = '';
+
             document.getElementById("taskAdded").innerHTML="Task Added!";
         }else{
             document.getElementById("taskAdded").innerHTML="Both fields are required.";

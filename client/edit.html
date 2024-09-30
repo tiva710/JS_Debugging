@@ -24,6 +24,7 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h3 id="modalHeader">Edit Task</h3>
+
             <form id="editTaskForm">
                 <label for="editTask">Task Description:</label>
                 <input type="text" id="editTask" name="description"><br>
@@ -31,6 +32,7 @@
                 <label for="completionDate">Completion Date:</label>
                 <input type="date" id="completionDate" name="completion_date"><br>
 
+                <!--Submission is handled below  -->
                 <button type="submit">Save Changes</button>
             </form>
         </div>
@@ -45,9 +47,9 @@
             const modal = document.getElementById("editModal");
             modal.style.display = "block";
 
-            // Handle form submission
+            //Handle form submission
             document.getElementById("editTaskForm").onsubmit = async function (e) {
-                e.preventDefault();  // Prevent page refresh
+                e.preventDefault();  //Prevent page refresh
         
                 const newDescription = document.getElementById("editTask").value;
                 const newCompletionDate = document.getElementById("completionDate");
