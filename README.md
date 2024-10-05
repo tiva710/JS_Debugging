@@ -28,7 +28,7 @@ Then: <br>
 
 <h3>To Do's & Reminders</h3>
 At first compilation, there will be errors (huge surprise there). <br>
-Use the tools & techniques on the provided strategy guide, think logically, try to adapt a "debugging mindset", and ask questions! <br> 
+Use the tools & techniques on the provided strategy guide, think logically, and ask questions! <br> 
 Running into problems is the whole point of this exercise and having a good mental model of the language is key to debugging in general. If you encounter issues relating to syntax you are not familiar with, feel free to ask about it or utilize online resources like: <a href="https://www.w3schools.com/js/default.asp">W3Schools</a> <br> 
 
 <h4>My research is dependant on data collection. I would greatly appreciate your participation in my post-tutorial survey linked <a href="https://forms.gle/s6u9DNC9HMsf8bJ49">Here</a></h4>
