@@ -16,7 +16,6 @@ You should also be familiar with basic JavaScript concepts. <br>
 <h4> Install Project Dependencies </h4>
 In the VSCode terminal: <br>
 <li>Navigate to project directory (if not already there)</li> <br> <br>
-
 <li>Run 'npm install' </li><br>
 
 Confirm installation with: <br>
