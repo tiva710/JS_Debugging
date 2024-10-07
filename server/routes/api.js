@@ -1,4 +1,5 @@
 //api.js
+'use strict';
 const express = require('express');
 const path = require('path');
 const initializeDatabase = require('../dbSetup');

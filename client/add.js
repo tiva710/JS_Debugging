@@ -1,5 +1,5 @@
 //add.js
-
+'use strict';
 // Add a new task to the list
 async function addTask(task) {
 

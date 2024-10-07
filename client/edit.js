@@ -1,5 +1,5 @@
 //edit.js
-
+'use strict';
 // List all tasks
 async function listTasks() {
     const response = await fetch('/tasks');
