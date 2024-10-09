@@ -10,12 +10,13 @@ You should also be familiar with basic JavaScript concepts. <br>
 
 
 <h3> Setting Up Your Environment in Visual Studio Code </h3> 
-<li>Download the project files or clone the repository</li> <br>
+<li>Download the project files or clone the repository</li>
+<pre><li>To clone via Git: <b>git clone https://github.com/tiva710/JS_Debugging.git </li></pre>
 <li>Open project in VSCode </li><br>
 
 <h4> Install Project Dependencies </h4>
 In the VSCode terminal: <br>
-<li>Navigate to project directory (if not already there)</li> <br> <br>
+<li>Navigate to project directory (if not already there)</li> <br> 
 <li>Run 'npm install' </li><br>
 
 Confirm installation with: <br>
