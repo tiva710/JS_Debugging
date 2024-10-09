@@ -33,8 +33,8 @@ Running into problems is the whole point of this exercise and having a good ment
 
 <h3>My research is dependant on data collection. I would greatly appreciate your participation in my post-tutorial survey linked <a href="https://forms.gle/s6u9DNC9HMsf8bJ49">Here</a></h3>
 
-<h4><a href="https://docs.google.com/presentation/d/1wBVL-YSo1OTjYyb99GRp6sJzOBSmiWaCxW66POWEJFE/edit#slide=id.p" target="_blank">Link to Slides</a></h4>
-<h4><a href="https://docs.google.com/document/d/1jkMI-TiyFZHrpgfoJAg_ggGOUkZ7V6dZAEpcBoL3YTg/edit?usp=sharing" target="_blank">Link to Strategy Guide</a></h4>
+<h4><a href="https://docs.google.com/presentation/d/1wBVL-YSo1OTjYyb99GRp6sJzOBSmiWaCxW66POWEJFE/edit#slide=id.p">Link to Slides</a></h4>
+<h4><a href="https://docs.google.com/document/d/1jkMI-TiyFZHrpgfoJAg_ggGOUkZ7V6dZAEpcBoL3YTg/edit?usp=sharing">Link to Strategy Guide</a></h4>
 
 Lastly, THANK YOU. I appreciate your willingness to learn and your feedback. I hope this tutorial was both helpful and beneficial. 
 
